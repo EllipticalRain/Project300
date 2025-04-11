@@ -1,0 +1,86 @@
+<!-- Only for design, submitting form does not lead anywhere --> 
+<!DOCTYPE html>
+                <html>
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                        <style>
+                            body {
+                                font-family: Arial, Helvetica, sans-serif;
+                                background-color: black;
+                            }
+                  
+                            * {
+                                box-sizing: border-box;
+                            }
+                            
+                            .container {
+                                padding: 16px;
+                                background-color: white;
+                            }
+                            
+                            input[type=text], input[type=password] {
+                                width: 100%;
+                                padding: 15px;
+                                margin: 5px 0 22px 0;
+                                display: inline-block;
+                                border: none;
+                                background: #f1f1f1;
+                            }
+                            
+                            input[type=text]:focus, input[type=password]:focus {
+                                background-color: #ddd;
+                                outline: none;
+                            }
+                            
+                            hr {
+                                border: 1px solid #f1f1f1;
+                                margin-bottom: 25px;
+                            }
+
+                            .loginbtn {
+                                background-color: #04AA6D;
+                                color: white;
+                                padding: 16px 20px;
+                                margin: 8px 0;
+                                border: none;
+                                cursor: pointer;
+                                width: 100%;
+                                opacity: 0.9;
+                            }
+                            
+                            .loginbtn:hover {
+                                opacity: 1;
+                            }
+
+                            a {
+                                color: dodgerblue;
+                            }
+                        </style>
+                        <title>Voter Terminal</title>
+                    </head>
+                    <body>
+                
+                    <form action='/castballot' method='POST'>
+                        <div class="container">
+                            <h1>Cast Your Vote</h1>
+                            <p>Please enter a number that corresponds to the candidate you wish to elect.</p>
+                            <hr>
+
+                            <ol>
+                                <li>Ferdinand Powell</li>
+                                <li>Michael Ford</li>
+                                <li>Carina Collins</li>
+                            </ol>
+
+                            <p><br></p>
+                
+                            <label for="cannum"><b>Candidate Number</b></label>
+                            <input type="text" placeholder="Enter Candidate Number" name="cannum" id="cannum" required>
+                
+                            <button type="submit" class="loginbtn">Register</button>
+                        </div>
+                    </form>
+                
+                    </body>
+                </html>
