@@ -10,3 +10,5 @@ There are also testing suites to test the core classes with additional unit test
 
 The HTML5 folder contains HTML5 files that display what the UI for this project should look like. The HTML5 files are not connected to the Java code.
 Copies of the HMTL5 code are implemented within the Java class Html as string objects.
+
+Version control for this project was conducted in a GitLab repository on a student account assiocated with Lancaster University. The contents of this project have been moved here to show case my experience in formal software verification and also unit testing in Java.
